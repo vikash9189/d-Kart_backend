@@ -14,7 +14,7 @@ const orders=require('./Routes/userOrders');
 const sendOTP   =require('./Routes/OTPverification');
 const { verify } = require('jsonwebtoken');
 const dotenv=require('dotenv').config({path:__dirname+'/.env'});
-const portNum=process.env.port;
+const portNum=process.env.PORT;
 dbConnect();
 
 app.use(express.json())
